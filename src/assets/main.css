@@ -1,0 +1,9 @@
+@import './base.css';
+
+:root {
+  --branco-fundo: #FFF;
+}
+
+body {
+  background: #CCC;
+}
