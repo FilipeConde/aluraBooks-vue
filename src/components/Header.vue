@@ -2,17 +2,17 @@
   <header class="header">
     <div class="container">
       <span class="header__menu-icon"></span>
-      <img src="./icons/Logo.svg" alt="" class="header__logo">
+      <img src="../icons/Logo.svg" alt="" class="header__logo">
     </div>
     <div class="container">
       <a href="#" class="header__link">
-        <img src="./icons/Favoritos.svg" alt="" class="header__icon">
+        <img src="../icons/Favoritos.svg" alt="" class="header__icon">
       </a>
       <a href="#" class="header__link">
-        <img src="./icons/Compras.svg" alt="" class="header__icon">
+        <img src="../icons/Compras.svg" alt="" class="header__icon">
       </a>
       <a href="#" class="header__link">
-        <img src="./icons/Usuário.svg" alt="" class="header__icon">
+        <img src="../icons/Usuário.svg" alt="" class="header__icon">
       </a>
     </div>
   </header>
@@ -32,7 +32,7 @@
 }
 
 .header__menu-icon {
-  background-image: url("./icons/Menu.svg");
+  background-image: url("../icons/Menu.svg");
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;
