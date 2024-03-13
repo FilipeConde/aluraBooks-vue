@@ -44,5 +44,7 @@
   font-family: var(--main-font);
   font-size: 14px;
   font-weight: 400;
+  background: url("../icons/Pesquisa.svg") no-repeat;
+  background-position: 1em;
 }
 </style>
