@@ -1,22 +1,30 @@
 <template>
-  <section class="display-section">
-    <SectionTitle :text="'TEST'" />
+  <section class="display-section" v-for="item in dataArr" :key="item.sectionTitle">
+    <SectionTitle :text="item.sectionTitle" />
     <HighlightsCard />
   </section>
 </template>
 
 <script lang="ts">
 
+import type IDisplaySection from '@/interfaces/IDisplaySection';
+import displaySectionDataJson from '@/fixtures/displaySectionData.json'
 import HighlightsCard from './HighlightsCard.vue'
 import SectionTitle from './SectionTitle.vue'
 
 export default {
-  components: { HighlightsCard, SectionTitle }
+  components: { HighlightsCard, SectionTitle },
+  data() {
+    return {
+      dataArr: [] as IDisplaySection[]
+    }
+  },
+  created() {
+    this.dataArr = displaySectionDataJson
+  },
 }
 
 </script>
 
 
-<style scoped>
-
-</style>
+<style scoped></style>
