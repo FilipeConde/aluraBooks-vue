@@ -2,6 +2,8 @@
 
 :root {
   --branco-fundo: #FFF;
+  --yellow-default: #EB9B00;
+  --dark-blue: #002F52;
   --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
   --main-font: "Poppins"
 }

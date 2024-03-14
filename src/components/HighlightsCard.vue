@@ -2,9 +2,9 @@
   <div class="card">
     <div class="card__description container">
       <div class="description-container">
-        <h2 class="title">TITLE_TEST</h2>
-        <h2 class="main-text">MAIN-TEXT_TEST</h2>
-        <p class="description">DESCRIPTION_TEST</p>
+        <h3 class="title">Talvez você também se interesse por...</h3>
+        <h2 class="main-text">Angular 11 e Firebase</h2>
+        <p class="description">Construindo uma aplicação integrada com a plataforma do Google.</p>
       </div>
       <img src="../images/Angular.svg" alt="" class="card-image">
     </div>
@@ -39,12 +39,53 @@
   padding: 1em;
   margin: 2em;
   border-radius: 12px;
-  box-shadow: 10px 10px 5px rgba(2, 2, 2, .5);
-  
+  box-shadow: 1px 6px 10px rgba(2, 2, 2, .3);
+  font-family: var(--main-font);
+
 }
 
-.container, .general-buttons {
+.container,
+.general-buttons {
   justify-content: space-between;
   display: flex;
+}
+
+.card-image {
+  align-self: flex-start;
+}
+
+.description-container {
+  line-height: 1.5em;
+  padding-right: 1em;
+}
+
+.title {
+  font-size: 16px;
+  color: var(--yellow-default);
+  font-weight: bold;
+}
+
+.main-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--dark-blue);
+  padding: .5em 0;
+}
+
+.description {
+  font-size: 14px;
+}
+
+.button-item {
+  padding: .5em;
+}
+
+.main-button {
+  background: var(--yellow-default);
+  align-self: center;
+  padding: 1em 2.2em;
+  font-weight: bold;
+  color: var(--branco-fundo);
+  text-decoration: none;
 }
 </style>
