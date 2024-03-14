@@ -1,5 +1,5 @@
 <template>
-  <div class="card" v-for="item in dataArr" :key="item.title">
+  <div class="card" :item="item">
     <div class="card__description container">
       <div class="description-container">
         <h3 class="title">
@@ -32,18 +32,13 @@
 </template>
 
 <script lang="ts">
-import highlightCardsJson from '@/fixtures/highlightCards.json'
-import type IHighlightsCard from '../interfaces/IHighlightsCard'
 
 export default {
-  data() {
-    return {
-      dataArr: [] as IHighlightsCard[]
-    }
-  },
-  created() {
-    this.dataArr = highlightCardsJson
-  },
+
+  props: {
+    item: { type: Object, required: true}
+  }
+
 }
 
 </script>
@@ -105,4 +100,4 @@ export default {
   color: var(--branco-fundo);
   text-decoration: none;
 }
-</style>../interfaces/IHighlightsCard
+</style>

@@ -1,7 +1,7 @@
 <template>
   <section class="display-section" v-for="item in dataArr" :key="item.sectionTitle">
     <SectionTitle :text="item.sectionTitle" />
-    <HighlightsCard />
+    <HighlightsCard :item="item.card"/>
   </section>
 </template>
 
