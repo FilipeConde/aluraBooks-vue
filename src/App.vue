@@ -13,5 +13,4 @@ import DisplaySection from './components/DisplaySection.vue'
 
 <style scoped>
 
-</style>./components/Header.vue
-./components/HighlightsCard.vue
+</style>
