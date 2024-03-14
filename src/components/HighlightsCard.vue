@@ -33,7 +33,7 @@
 
 <script lang="ts">
 import highlightCardsJson from '@/fixtures/highlightCards.json'
-import type IHighlightsCard from './interfaces/IHighlightsCard'
+import type IHighlightsCard from '../interfaces/IHighlightsCard'
 
 export default {
   data() {
@@ -105,4 +105,4 @@ export default {
   color: var(--branco-fundo);
   text-decoration: none;
 }
-</style>
+</style>../interfaces/IHighlightsCard

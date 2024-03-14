@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import Header from './components/Header.vue'
 import Banner from './components/Banner.vue'
-import HighlightsCard from './components/HighlightsCard.vue'
+import DisplaySection from './components/DisplaySection.vue'
 </script>
 
 <template>
   <Header />
   <Banner />
-  <HighlightsCard />
+  <DisplaySection />
   
 </template>
 
