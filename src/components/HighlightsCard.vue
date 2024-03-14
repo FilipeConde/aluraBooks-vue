@@ -1,12 +1,16 @@
 <template>
-  <div class="card">
+  <div class="card" v-for="item in dataArr" :key="item.title">
     <div class="card__description container">
       <div class="description-container">
-        <h3 class="title">Talvez você também se interesse por...</h3>
-        <h2 class="main-text">Angular 11 e Firebase</h2>
-        <p class="description">Construindo uma aplicação integrada com a plataforma do Google.</p>
+        <h3 class="title">
+          {{ item.title }}
+        </h3>
+        <h2 class="main-text">
+          {{ item.mainText }}</h2>
+        <p class="description">
+          {{ item.description }}</p>
       </div>
-      <img src="../images/Angular.svg" alt="" class="card-image">
+      <img :src="item.image" alt="" class="card-image" >
     </div>
     <div class="card__buttons container">
       <ul class="general-buttons">
@@ -28,6 +32,19 @@
 </template>
 
 <script lang="ts">
+import highlightCardsJson from '@/fixtures/highlightCards.json'
+import type IHighlightsCard from './interfaces/IHighlightsCard'
+
+export default {
+  data() {
+    return {
+      dataArr: [] as IHighlightsCard[]
+    }
+  },
+  created() {
+    this.dataArr = highlightCardsJson
+  },
+}
 
 </script>
 
