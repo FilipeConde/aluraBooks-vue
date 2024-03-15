@@ -2,20 +2,23 @@
   <div class="recent-topics__container">
     <h2 class="recent-topics__title">TÓPICOS VISITADOS RECENTEMENTE</h2>
     <ul class="recent-topics__list">
-      <li class="recent-topics__item">Android</li>
-      <li class="recent-topics__item">Marketing digital</li>
-      <li class="recent-topics__item">Agile</li>
-      <li class="recent-topics__item">Startups</li>
-      <li class="recent-topics__item">html e css</li>
-      <li class="recent-topics__item">python</li>
-      <li class="recent-topics__item">OO</li>
-      <li class="recent-topics__item">java</li>
+      <li class="recent-topics__item" v-for="item in dataArr">{{item}}</li>
     </ul>
   </div>
 </template>
 
 <script lang="ts">
+import recentTopicsJson from '@/fixtures/recentTopics.json'
+
 export default {
+  data() {
+    return {
+      dataArr: [] as String[]
+    }
+  },
+  created() {
+    this.dataArr = recentTopicsJson
+  },
   
 }
 </script>
