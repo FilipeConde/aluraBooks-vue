@@ -49,7 +49,7 @@ export default {
   flex-direction: column;
   background: var(--branco-fundo);
   padding: 1em;
-  margin: 2em;
+  margin: 1em 2em 2em 2em;
   border-radius: 12px;
   box-shadow: 1px 6px 10px rgba(2, 2, 2, .3);
   font-family: var(--main-font);

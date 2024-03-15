@@ -1,8 +1,8 @@
 <template>
   <section class="display-section" v-for="item in dataArr" :key="item.sectionTitle">
-    <SectionTitle :text="item.sectionTitle" />
-    <BookStrip :book-list="item.bookList"/>
-    <HighlightsCard :item="item.card" />
+    <SectionTitle :text="item.sectionTitle" class="title"/>
+    <BookStrip :book-list="item.bookList" class="book-strip"/>
+    <HighlightsCard :item="item.card" class="highlight-card"/>
   </section>
 </template>
 
@@ -28,5 +28,10 @@ export default {
 
 </script>
 
+<style scoped>
 
-<style scoped></style>
+.highlight-card {
+  margin-top: .5em;
+}
+
+</style>

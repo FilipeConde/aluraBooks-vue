@@ -19,9 +19,6 @@ export default {
 </script>
 
 <style scoped>
-.book-strip__container {
-  /* display: flex; */
-}
 
 .book-strip__list {
   display: flex;
@@ -29,7 +26,7 @@ export default {
 }
 
 .book-strip__item {
-  padding: 2em 1em 0 1em;
+  padding: 1em 1em 0 1em;
   height: 250px;
 }
 
