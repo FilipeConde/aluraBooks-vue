@@ -2,8 +2,14 @@
   <div class="recent-topics__container">
     <h2 class="recent-topics__title">TÓPICOS VISITADOS RECENTEMENTE</h2>
     <ul class="recent-topics__list">
-      <li class="recent-topics__item">Teste</li>
-      <li class="recent-topics__item">Teste</li>
+      <li class="recent-topics__item">Android</li>
+      <li class="recent-topics__item">Marketing digital</li>
+      <li class="recent-topics__item">Agile</li>
+      <li class="recent-topics__item">Startups</li>
+      <li class="recent-topics__item">html e css</li>
+      <li class="recent-topics__item">python</li>
+      <li class="recent-topics__item">OO</li>
+      <li class="recent-topics__item">java</li>
     </ul>
   </div>
 </template>
@@ -15,5 +21,32 @@ export default {
 </script>
 
 <style scoped>
+.recent-topics__container {
+text-align: center;
+font-family: var(--main-font);
+color: var(--branco-fundo);
+background: var(--azul-degrade);
+}
+
+.recent-topics__title {
+  font-weight: light;
+  font-size: 16px;
+  padding: 1.5em;
+}
+
+.recent-topics__list {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 1em;
+}
+
+.recent-topics__item {
+  background: var(--yellow-default);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 1.5em 2em;
+  margin: .5em;
+}
 
 </style>
