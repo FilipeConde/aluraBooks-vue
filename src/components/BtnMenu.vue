@@ -53,6 +53,7 @@ export default {}
   position: absolute;
   top: 69px;
   font-family: var(--main-font);
+  width: 40vw;
   /* align-items: left; */
 }
 
@@ -72,6 +73,7 @@ export default {}
 
 .title {
   font-weight: bold;
+  /* padding-right: 10em; */
   color: var(--yellow-default);
   cursor: auto;
   background: var(--branco-fundo);
