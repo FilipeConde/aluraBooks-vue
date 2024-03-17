@@ -1,15 +1,17 @@
 <template>
-  <div class="container">
-    <input type="checkbox" id="menu">
-      <label for="menu">
-        <span class="header__menu-icon"></span>
-      </label>
-      <ul class="menu-list">
-        <li class="menu-list__item">TESTE</li>
-        <li class="menu-list__item">TESTE</li>
-        <li class="menu-list__item">TESTE</li>
-        <li class="menu-list__item">TESTE</li>
-      </ul>
+  <div class="menu-container">
+    <input type="checkbox" id="menu" />
+    <label for="menu">
+      <span class="header__menu-icon"></span>
+    </label>
+    <ul class="menu-list">
+      <li class="title">Categorias</li>
+      <li class="menu-list__item">Programação</li>
+      <li class="menu-list__item">Front-end</li>
+      <li class="menu-list__item">Infraestrutura</li>
+      <li class="menu-list__item">Business</li>
+      <li class="menu-list__item">Design e UX</li>
+    </ul>
   </div>
 </template>
 
@@ -18,13 +20,13 @@ export default {}
 </script>
 
 <style scoped>
-
-.container {
+.menu-container {
   display: flex;
   flex-direction: column;
-
 }
-#menu, .menu-list {
+
+#menu,
+.menu-list {
   display: none;
 }
 
@@ -48,10 +50,30 @@ export default {}
 #menu:checked~.menu-list {
   display: flex;
   flex-direction: column;
-  width: auto;
-  height: auto;
-  top: 100%;
-  width: 60vw;
+  position: absolute;
+  top: 69px;
+  font-family: var(--main-font);
+  /* align-items: left; */
 }
 
+.menu-list__item, .title {
+  /* z-index: 2; */
+  background: var(--branco-fundo);
+  padding: 1em;
+  width: auto;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.menu-list__item:hover {
+  color: var(--branco-fundo);
+  background: var(--azul-degrade);
+}
+
+.title {
+  font-weight: bold;
+  color: var(--yellow-default);
+  cursor: auto;
+  background: var(--branco-fundo);
+}
 </style>
