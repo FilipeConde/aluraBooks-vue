@@ -4,6 +4,7 @@ import Banner from './components/Banner.vue'
 import DisplaySection from './components/DisplaySection.vue'
 import RecentTopics from './components/RecentTopics.vue'
 import Contact from '@/components/Contact.vue'
+import Footer from '@/components/Footer.vue'
 </script>
 
 <template>
@@ -13,14 +14,15 @@ import Contact from '@/components/Contact.vue'
   <RecentTopics />
   <Contact />
   <hr />
+  <Footer />
   
 </template>
 
 <style scoped>
 hr {
-  /* color: var(--branco-fundo); */
   background: var(--branco-fundo);
   margin: 0;
-  padding: .5em;
+  padding: 0px;
+  border-bottom: none;
 }
 </style>
