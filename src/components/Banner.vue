@@ -23,6 +23,7 @@
   font-size: 18px;
   font-weight: bold;
 }
+
 .banner__text {
   padding: 1em;
   font-size: 16px;
@@ -46,5 +47,16 @@
   font-weight: 400;
   background: url("../icons/Pesquisa.svg") no-repeat;
   background-position: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .banner__search {
+    width: 70%;
+  }
+
+  .banner__title {
+  font-size: 36px;
+}
 }
 </style>
