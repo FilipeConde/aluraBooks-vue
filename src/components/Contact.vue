@@ -1,9 +1,13 @@
 <template>
   <section class="contact">
     <div class="container">
-      <h2 class="contact__main-text">Fique por dentro das novidades!</h2>
-      <h3 class="contact__description">Atualizações de e-books, novos livros, promoções e outros.</h3>
-      <input type="email" name="email-input" id="email-input" placeholder="Cadastre seu e-mail">
+      <div class="container__text">
+        <h2 class="contact__main-text">Fique por dentro das novidades!</h2>
+        <h3 class="contact__description">Atualizações de e-books, novos livros, promoções e outros.</h3>
+      </div>
+      <div class="container__input">
+        <input type="email" name="email-input" id="email-input" placeholder="Cadastre seu e-mail">
+      </div>
     </div>
   </section>
 </template>
@@ -52,6 +56,37 @@ export default {}
   text-align: center;
   background: url('../icons/Email.svg') no-repeat;
   background-position: 6em;
+}
+
+@media screen and (min-width: 1024px) {
+  .container__text {
+    display: flex;
+    flex-direction: column;
+    padding-right: 2em;
+    width: 80%;
+  }
+
+  .container__input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+  }
+
+  .contact__main-text {
+    font-size: 24px;
+    padding: .5em 0;
+  }
 }
 
 </style>
