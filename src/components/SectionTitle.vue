@@ -28,4 +28,10 @@ export default {
   font-size: 18px;
   padding: 1em 0 .6em 0;
 }
+
+@media screen and (min-width: 1024px) {
+  .section-title__text {
+    font-size: 26px;
+  }
+}
 </style>

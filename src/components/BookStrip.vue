@@ -12,14 +12,13 @@
 
 export default {
   props: {
-    bookList: { type: Array<string>, required: true}
+    bookList: { type: Array<string>, required: true }
   }
 }
 
 </script>
 
 <style scoped>
-
 .book-strip__list {
   display: flex;
   overflow-x: scroll;
@@ -34,4 +33,20 @@ export default {
   height: 90%;
 }
 
+@media screen and (min-width: 1024px) {
+
+  .book-strip__item {
+    padding: 2em 1em 0 3em;
+
+  }
+
+  .book-strip__image {
+    height: 90%;
+  }
+
+  .book-strip__item {
+  height: 270px;
+}
+
+}
 </style>
