@@ -2,7 +2,7 @@
   <div class="recent-topics__container">
     <h2 class="recent-topics__title">TÓPICOS VISITADOS RECENTEMENTE</h2>
     <ul class="recent-topics__list">
-      <li class="recent-topics__item" v-for="item in dataArr">{{item}}</li>
+      <li class="recent-topics__item" v-for="item in dataArr">{{ item }}</li>
     </ul>
   </div>
 </template>
@@ -19,16 +19,16 @@ export default {
   created() {
     this.dataArr = recentTopicsJson
   },
-  
+
 }
 </script>
 
 <style scoped>
 .recent-topics__container {
-text-align: center;
-font-family: var(--main-font);
-color: var(--branco-fundo);
-background: var(--azul-degrade);
+  text-align: center;
+  font-family: var(--main-font);
+  color: var(--branco-fundo);
+  background: var(--azul-degrade);
 }
 
 .recent-topics__title {
@@ -52,4 +52,15 @@ background: var(--azul-degrade);
   margin: .5em;
 }
 
+@media screen and (min-width: 1024px) {
+
+  .recent-topics__title,
+  .recent-topics__item {
+    font-size: 24px;
+  }
+
+  .recent-topics__list {
+    margin: 0 2em;
+  }
+}
 </style>
