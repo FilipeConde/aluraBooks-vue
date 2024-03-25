@@ -1,13 +1,15 @@
 <template>
-  <div class="container">
-    TEST
+  <div class="container" :listData="listData">
+    <p>{{ listData }}</p>
   </div>
 </template>
 
 <script lang="ts">
+// import type IFooterList from '@/interfaces/IFooterList'
+
 export default {
-  data() {
-    
+  props: {
+    listData: {type: Object, required: true}
   }
 }
 </script>

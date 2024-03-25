@@ -1,15 +1,25 @@
 <template>
   <footer class="footer">
     <h2 class="footer__title">Grupo Alura</h2>
-    <FooterList />
+    <FooterList :list-data="dataArr[0]" />
   </footer>
 </template>
 
 <script lang="ts">
 import FooterList from '@/components/FooterList.vue'
+import type IFooterList from '@/interfaces/IFooterList'
+import footerDataJson from '@/fixtures/footerData.json'
 
 export default {
-  components: { FooterList }
+  components: { FooterList },
+  data() {
+    return {
+      dataArr: [] as IFooterList[]
+    }
+  },
+  created() {
+    this.dataArr = footerDataJson
+  },
 }
 
 </script>
