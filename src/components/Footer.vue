@@ -1,11 +1,16 @@
 <template>
   <footer class="footer">
     <h2 class="footer__title">Grupo Alura</h2>
+    <FooterList />
   </footer>
 </template>
 
 <script lang="ts">
-export default {}
+import FooterList from '@/components/FooterList.vue'
+
+export default {
+  components: { FooterList }
+}
 
 </script>
 
