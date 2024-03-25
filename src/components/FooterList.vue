@@ -4,7 +4,7 @@
     <ul class="list-wrapper">
       <li class="list-item" v-for="item in listData.list" :key="item.name">
         <img :src="item.iconPath" alt="" class="list-item__img">
-        <a href="#" class="list_item__link">{{ item.name }}</a>
+        <a href="#" class="list-item__link">{{ item.name }}</a>
       </li>
     </ul>
   </div>
@@ -21,5 +21,31 @@ export default {
 </script>
 
 <style scoped>
+
+.container {
+  font-family: var(--main-font)
+}
+
+.list-title {
+  font-size: 14px;
+  color: #858585;
+  padding: 1rem;
+}
+
+.list-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+}
+
+.list-item__link {
+  font-size: 14px;
+  text-decoration: none;
+  color: #474646;
+}
 
 </style>

@@ -39,8 +39,16 @@ export default {
 }
 
 @media screen and (min-width: 1024px) {
-  .footer__list {
+  .footer {
     display: flex;
+  }
+
+  .footer__list {
+    display: inline-block;
   }  
+
+  .footer__title {
+    font-size: 24px;
+  }
 }
 </style>
