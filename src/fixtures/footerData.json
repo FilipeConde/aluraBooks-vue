@@ -11,5 +11,18 @@
         "iconPath": "src/icons/footer/CasaDoCodigo.svg"
       }
     ]
+  },
+  {
+    "listName": "Educação Online",
+    "list": [
+      {
+        "name": "Caelum",
+        "iconPath": "src/icons/footer/Caelum.svg"
+      },
+      {
+        "name": "Casa do Código",
+        "iconPath": "src/icons/footer/CasaDoCodigo.svg"
+      }
+    ]
   }
 ]

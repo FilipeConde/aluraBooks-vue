@@ -1,6 +1,12 @@
 <template>
   <div class="container" :listData="listData">
-    <p>{{ listData }}</p>
+    <h3 class="list-title">{{ listData.listName }}</h3>
+    <ul class="list-wrapper">
+      <li class="list-item" v-for="item in listData.list" :key="item.name">
+        <img :src="item.iconPath" alt="" class="list-item__img">
+        <a href="#" class="list_item__link">{{ item.name }}</a>
+      </li>
+    </ul>
   </div>
 </template>
 
