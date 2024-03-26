@@ -26,9 +26,11 @@
       </a>
       <a href="#" class="header__link">
         <img src="../icons/Compras.svg" alt="" class="header__icon">
+        <p class="header__link-text">Minhas Compras</p>
       </a>
       <a href="#" class="header__link">
         <img src="../icons/Usuário.svg" alt="" class="header__icon">
+        <p class="header__link-text">Meu Perfil</p>
       </a>
     </div>
   </header>
@@ -74,10 +76,14 @@ export default {
   display: none;
 }
 
+.header__link-text {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
 
   .header {
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .menu__list {
@@ -96,7 +102,7 @@ export default {
     font-family: var(--main-font);
   }
 
-  
+
   .menu__item {
     background: var(--branco-fundo);
     padding: 1em;
@@ -104,7 +110,7 @@ export default {
     align-items: flex-start;
     cursor: pointer;
   }
-  
+
   .menu__item:hover {
     color: var(--branco-fundo);
     background: var(--azul-degrade);
@@ -139,8 +145,30 @@ export default {
     font-weight: bold;
   }
 
-  .fav {
+  .header__link.fav {
     display: none;
   }
+}
+
+@media screen and (min-width: 1728px) {
+
+  .header {
+    justify-content: space-between;
+    padding: .5em 3em;
+  }
+
+  .header__link-text {
+    display: block;
+  }
+
+  .header__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: var(--main-font);
+    color: #000;
+    padding: 0 2em 0 2em;
+  }
+
 }
 </style>
