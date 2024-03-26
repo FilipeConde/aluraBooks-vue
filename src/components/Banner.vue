@@ -52,11 +52,19 @@
 @media screen and (min-width: 1024px) {
 
   .banner__search {
-    width: 70%;
+    width: 50%;
   }
 
   .banner__title {
-  font-size: 36px;
+    font-size: 36px;
+  }
 }
+
+@media screen and (min-width: 1728px) {
+
+  .banner__search {
+    width: 30%;
+  }
+
 }
 </style>
