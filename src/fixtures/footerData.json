@@ -16,12 +16,32 @@
     "listName": "Educação Online",
     "list": [
       {
-        "name": "Caelum",
-        "iconPath": "src/icons/footer/Caelum.svg"
+        "name": "Alura",
+        "iconPath": "src/icons/footer/Alura.svg"
       },
       {
-        "name": "Casa do Código",
-        "iconPath": "src/icons/footer/CasaDoCodigo.svg"
+        "name": "Alura Para Empresas",
+        "iconPath": "src/icons/footer/AluraEmpresas.svg"
+      },
+      {
+        "name": "Alura LATAM",
+        "iconPath": "src/icons/footer/AluraLATAM.svg"
+      },
+      {
+        "name": "Alura Start",
+        "iconPath": "src/icons/footer/AluraStart.svg"
+      },
+      {
+        "name": "Music Dot",
+        "iconPath": "src/icons/footer/MusicDot.svg"
+      },
+      {
+        "name": "Alura Língua",
+        "iconPath": "src/icons/footer/AluraLingua.svg"
+      },
+      {
+        "name": "PM3",
+        "iconPath": "src/icons/footer/PM3.svg"
       }
     ]
   },
@@ -29,12 +49,32 @@
     "listName": "Comunidade",
     "list": [
       {
-        "name": "Caelum",
-        "iconPath": "src/icons/footer/Caelum.svg"
+        "name": "Hipsters ponto Tech",
+        "iconPath": "src/icons/footer/HipstersTech.svg"
       },
       {
-        "name": "Casa do Código",
-        "iconPath": "src/icons/footer/CasaDoCodigo.svg"
+        "name": "Scuba Dev",
+        "iconPath": "src/icons/footer/ScubaDev.svg"
+      },
+      {
+        "name": "Layers ponto Tech",
+        "iconPath": "src/icons/footer/LayersTech.svg"
+      },
+      {
+        "name": "Like a Boss",
+        "iconPath": "src/icons/footer/LikeABoss.svg"
+      },
+      {
+        "name": "Carreira Sem Fronteira",
+        "iconPath": "src/icons/footer/CarreiraSemFronteira.svg"
+      },
+      {
+        "name": "Hipsters Jobs",
+        "iconPath": "src/icons/footer/HipstersJobs.svg"
+      },
+      {
+        "name": "GUJ",
+        "iconPath": "src/icons/footer/GUJ.svg"
       }
     ]
   }
