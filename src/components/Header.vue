@@ -159,6 +159,8 @@ export default {
 
   .header__link-text {
     display: block;
+    font-size: 20px;
+    font-weight: 400;
   }
 
   .header__link {
