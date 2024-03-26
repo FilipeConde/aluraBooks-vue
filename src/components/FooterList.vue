@@ -47,6 +47,7 @@ export default {
   font-size: 14px;
   text-decoration: none;
   color: #474646;
+  padding-left: .5em;
 }
 
 </style>
