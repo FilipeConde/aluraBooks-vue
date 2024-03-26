@@ -24,5 +24,18 @@
         "iconPath": "src/icons/footer/CasaDoCodigo.svg"
       }
     ]
+  },
+  {
+    "listName": "Comunidade",
+    "list": [
+      {
+        "name": "Caelum",
+        "iconPath": "src/icons/footer/Caelum.svg"
+      },
+      {
+        "name": "Casa do Código",
+        "iconPath": "src/icons/footer/CasaDoCodigo.svg"
+      }
+    ]
   }
 ]

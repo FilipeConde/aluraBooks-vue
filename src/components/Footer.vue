@@ -27,10 +27,12 @@ export default {
 <style scoped>
 .footer {
   background: var(--branco-fundo);
+  padding: 1.5em;
+  padding-right: 3em;
+  justify-content: space-between;
 }
 
 .footer__title {
-  padding: 1em 1em 1.5em 1.5em;
   font-family: var(--main-font);
 }
 

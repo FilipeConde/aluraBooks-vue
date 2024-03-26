@@ -29,7 +29,7 @@ export default {
 .list-title {
   font-size: 14px;
   color: #858585;
-  padding: 1rem;
+  text-transform: uppercase;
 }
 
 .list-wrapper {
@@ -40,6 +40,7 @@ export default {
 .list-item {
   display: flex;
   align-items: center;
+  padding: 1em 0 0 0;
 }
 
 .list-item__link {
