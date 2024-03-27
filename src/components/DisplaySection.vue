@@ -1,8 +1,10 @@
 <template>
   <section class="display-section" v-for="item in dataArr" :key="item.sectionTitle">
     <SectionTitle :text="item.sectionTitle" class="title" />
-    <BookStrip :book-list="item.bookList" class="book-strip" />
-    <HighlightsCard :item="item.card" class="highlight-card" />
+    <div class="content-wrapper">
+      <BookStrip :book-list="item.bookList" class="book-strip" />
+      <HighlightsCard :item="item.card" class="highlight-card" />
+    </div>
   </section>
 </template>
 
@@ -45,5 +47,22 @@ export default {
     margin: 0 8em;
   }
 
+}
+
+@media screen and (min-width: 1728px) {
+  .content-wrapper {
+    display: flex;
+    padding-right: 6rem;
+  }
+
+  .book-strip {
+    margin: 0 2rem;
+    overflow-x: scroll;
+    width: 50%;
+  }
+
+  .highlight-card {
+    width: 30%;
+  }
 }
 </style>

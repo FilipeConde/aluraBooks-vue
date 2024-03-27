@@ -34,4 +34,11 @@ export default {
     font-size: 26px;
   }
 }
+
+@media screen and (min-width: 1728px) {
+  .section-title__text {
+    font-size: 32px;
+  }
+  
+}
 </style>

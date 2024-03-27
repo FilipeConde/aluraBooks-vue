@@ -100,4 +100,12 @@ export default {
   color: var(--branco-fundo);
   text-decoration: none;
 }
+
+@media screen and (min-width: 1728px) {
+  .title {
+    font-size: 28px;
+    line-height: 1.5em;
+  }
+  
+}
 </style>
