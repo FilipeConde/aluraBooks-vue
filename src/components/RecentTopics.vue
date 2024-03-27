@@ -63,4 +63,10 @@ export default {
     margin: 0 2em;
   }
 }
+
+@media screen and (min-width: 1728px) {
+  .recent-topics__list {
+    padding: 0 16rem;
+  }
+}
 </style>
