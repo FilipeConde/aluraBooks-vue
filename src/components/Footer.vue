@@ -53,4 +53,10 @@ export default {
     font-size: 24px;
   }
 }
+
+@media screen and (min-width: 1728px) {
+  .footer {
+    padding: 1.5em 12em 1.5em 9em;
+  }  
+}
 </style>
