@@ -67,6 +67,11 @@ export default {
 @media screen and (min-width: 1728px) {
   .recent-topics__list {
     padding: 0 16rem;
+    padding-bottom: 3rem;
+  }
+
+  .recent-topics__title {
+    font-size: 32px;
   }
 }
 </style>
